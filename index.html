@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MyCS+ Seminar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <!-- replace text with an <img> if you have a logo -->
+        <a href="index.html">MyCS+</a>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="next-talk.html">Next talk</a>
+        <a href="past-talks.html">Past talks</a>
+        <a href="instructions-audience.html">Audience</a>
+        <a href="instructions-speakers.html">Speakers</a>
+        <a href="staying-informed.html">Staying informed</a>
+        <a href="credits.html">Credits</a>
+        <a href="suggest-talk.html">Suggest a talk</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>MyCS+ Online Seminar</h1>
+      <p class="tagline">
+        An online seminar series in theoretical computer science,
+        making talks accessible to a global audience.
+      </p>
+      <p>
+        We host regular talks on topics across TCS and related fields.
+        Talks are aimed at a broad TCS audience, with an emphasis on clarity
+        and accessibility.
+      </p>
+      <a class="primary-btn" href="next-talk.html">See the next talk →</a>
+    </section>
+
+    <section class="two-column">
+      <div>
+        <h2>Upcoming talks</h2>
+        <p>Check the <a href="next-talk.html">Next talk</a> page for the schedule, abstract, and Zoom details.</p>
+      </div>
+      <div>
+        <h2>Past talks</h2>
+        <p>Browse <a href="past-talks.html">Past talks</a> to discover previous speakers, titles, and slides.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> MyCS+ Seminar. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
