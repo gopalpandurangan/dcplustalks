@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Staying informed – DS Seminar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Adjust path if your CSS lives elsewhere -->
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <!-- Header / navigation (match your other pages) -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <a href="index.html">DS</a>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="next-talk.html">Next talk</a>
+        <a href="past-talks.html">Past talks</a>
+        <a href="instructions-audience.html">Audience</a>
+        <a href="instructions-speakers.html">Speakers</a>
+        <a href="staying-informed.html">Staying informed</a>
+        <a href="credits.html">Credits</a>
+        <a href="suggest-talk.html">Suggest a talk</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Staying informed</h1>
+
+    <p>
+      We use several channels to share information about upcoming DS talks, schedule changes,
+      and other news. 
+    </p>
+
+    <section>
+      <h2>Calendar</h2>
+      <p>
+        The easiest way to keep track of talks is to subscribe to our
+        <strong>online calendar</strong>. All confirmed talks are added with titles, speakers,
+        dates, times, and connection details.
+      </p>
+      <ul>
+        <li>
+          You can view the calendar in your browser.
+        </li>
+        <li>
+          You can also subscribe to it from most calendar applications
+          (Google Calendar, Apple Calendar, Outlook, etc.) using the provided URL.
+        </li>
+      </ul>
+      <!-- Replace # with the share link to your calendar -->
+      <p>
+        <a class="primary-btn" href="#">Open the DS calendar</a>
+      </p>
+    </section>
+
+    <section>
+      <h2>Mailing list</h2>
+      <p>
+        We maintain a low-volume <strong>mailing list</strong> for announcements.
+        Before each talk, we send out an email with the title, abstract, and connection information.
+      </p>
+      <ul>
+        <li>Typically, you will receive one email per talk, plus occasional general announcements.</li>
+        <li>You can unsubscribe at any time via a link at the bottom of every message.</li>
+      </ul>
+      <!-- Replace # with your mailing list subscription link -->
+      <p>
+        <a href="#">Subscribe to the announcement list</a>
+      </p>
+    </section>
+
+    <section>
+      <h2>Announcement blog and RSS</h2>
+      <p>
+        For those who prefer RSS or like to browse announcements in one place, we keep an
+        <strong>announcement blog</strong> where each talk has its own post. This is a good way
+        to scroll through past and upcoming talks.
+      </p>
+      <ul>
+        <li>Every talk is announced with title, speaker, abstract, and basic logistics.</li>
+        <li>If you use an RSS reader, you can subscribe to the blog’s RSS feed and receive
+            new posts automatically.</li>
+      </ul>
+      <!-- Replace # with your blog and RSS URLs -->
+      <p>
+        <a href="#">Visit the announcement blog</a> ·
+        <a href="#">RSS feed</a>
+      </p>
+    </section>
+
+    <section>
+      <h2>Social updates</h2>
+      <p>
+        We also post brief announcements of new talks and other news on our social accounts.
+        Follow us there if that is your preferred way to stay up to date.
+      </p>
+      <!-- Replace # and handle with your actual social links/handles -->
+      <ul>
+        <li>
+          <strong>Bluesky:</strong> <a href="#">@mycsplus.bsky.social</a>
+        </li>
+        <!-- Add others if you have them, e.g. X/Twitter, Mastodon, etc. -->
+      </ul>
+    </section>
+
+    <section>
+      <h2>YouTube and RSS</h2>
+      <p>
+        Most talks are recorded and made available on our
+        <strong>YouTube channel</strong>. If you subscribe there, you will be notified when
+        new recordings are posted.
+      </p>
+      <p>
+        You can also follow the channel via an <strong>RSS feed</strong>, which is handy if you
+        prefer to use a feed reader rather than the YouTube interface.
+      </p>
+      <!-- Replace # with your channel and RSS links -->
+      <p>
+        <a href="#">DS YouTube channel</a> ·
+        <a href="#">YouTube RSS feed</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> DS Seminar. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
