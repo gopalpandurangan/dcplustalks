@@ -1,0 +1,176 @@
+#calendar {
+   /* width: 800px; */
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  #header1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  #prevMonthBtn,
+  #nextMonthBtn {
+    padding: 5px;
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  #monthYear {
+    margin: 0 20px;
+    font-size: 20px;
+  }
+  
+  #daysOfWeek {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .dayOfWeek {
+    width: calc(100% / 7);
+    text-align: center;
+  }
+  
+  .dateCell {
+    width: calc(100% / 7);
+    height: 100px;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #ccc;
+    background-color: #f5f5f5;
+  }
+  
+  .currentMonth {
+    background-color: #fff;
+  }
+  
+  .event {
+    margin-bottom: 5px;
+    padding: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .event:hover {
+    background-color: #0056b3;
+  }
+  
+  .sliderContainer {
+    width: 200px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+  }
+  
+  .slider {
+    flex: 1;
+  }
+  
+  .datesTable {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+  }
+  
+  .datesTable td {
+    height: 80px;
+    width: 80px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    background-color: #f5f5f5;
+    text-align: -webkit-auto;
+    vertical-align:top;
+  }
+  
+  .datesTable .currentMonth {
+    /* background-color: #d6a46187; */
+    border-color:#007a86;
+    border-width:2px;
+    background-image: url("star1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  .eventContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .eventContainer .event {
+    margin-bottom: 5px;
+    padding: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .eventContainer .event:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Event popup styles */
+.eventPopup {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 300px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+}
+
+.eventPopup h3 {
+  margin-top: 0;
+}
+
+.eventPopup p {
+  margin-bottom: 5px;
+}
+
+.eventPopup button {
+  background-color: #ba0c2f;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.eventPopup button:hover {
+  background-color: #a70b29;
+}
+
+ @media (max-width:1400px) {
+  .datesTable td {
+    height: 60px;
+    width: 60px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    background-color: #f5f5f5;
+    text-align: -webkit-auto;
+    vertical-align:top;
+  }
+}
+ @media (max-width:428px) {
+  .datesTable td {
+    height: 60px;
+    width: 10px;
+    padding: 1px;
+    border: 1px solid #ccc;
+    background-color: #f5f5f5;
+    text-align: -webkit-auto;
+    vertical-align:top;
+  }
+}
